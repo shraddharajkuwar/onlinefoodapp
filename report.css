@@ -76,6 +76,7 @@ body{
     font-weight: 500;
     font-size: 15px !important;
     width: 150px;    
+    margin: auto;
 }
 .report-btn:hover{
  background-color: #4e5624;
