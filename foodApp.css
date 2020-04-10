@@ -9,7 +9,8 @@ body{
     top: 0px;
      position: absolute !important;    
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     align-items: initial !important;    
 }
 .indianCuisine{
@@ -45,6 +46,7 @@ body{
 .navbar-brand{
   z-index: 1;
   font-weight: 700;
+  text-transform: uppercase;
   color: #fff;
   font-size: 30px;
   position: absolute;
@@ -54,7 +56,7 @@ body{
 
 .item-list-container{
   position: relative;
-  top: 245px;
+  top: 230px;
 }
 .nav-link-img img{
   width: 40px;
@@ -67,9 +69,11 @@ body{
 }
 .card-header:after,
 .card-header.collapsed:after{
-  position: absolute;
+    position: absolute;
     right: -6px;
-    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 25px;
     height: 25px;
     line-height: 26px;
@@ -105,11 +109,12 @@ body{
   font-weight: 500;
 }
 .card-header-img img{
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 25px;
+  width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 40px;
+    margin-left: 40px;
   box-shadow: 1px 1px 3px #5d5f51;
   -webkit-box-shadow: 1px 1px 3px #5d5f51;
   -moz-box-shadow: 1px 1px 3px #5d5f51;
@@ -122,18 +127,22 @@ body{
 }
 .card-header-row1{
   width: 100%;
+  align-items: center;
 }
 .cart-item{
   min-height: 100px;
 }
 .card-header .cart-value{
     height: 75px;
-    width: 25px;
+    width: 30px;
     background: #fff;
     float: right;
     position: absolute;
     right: -6px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;    
     box-shadow: 1px 1px 3px #5d5f51;
     -webkit-box-shadow: 1px 1px 3px #5d5f51;
@@ -141,9 +150,11 @@ body{
 }
 .card-header .cart-value .fa-minus{
    color: #f97c7c;
+   font-size: 13px;
 }
 .card-header .cart-value .fa-plus{
    color: #78ed78;
+   font-size: 13px;
 }
 .card-header .cart-value .cart-value-digit{
    color: #4a4b1f;
@@ -153,7 +164,9 @@ body{
   cursor: pointer;
 }
 .card-header .item-name{
-   display: block;
+   display: flex;
+    font-weight: 500;    
+    font-size: 17px;
 }
 .card-header .item-rating{
    margin-right: 30px;
@@ -181,10 +194,10 @@ body{
   top: 20px;
   right: 20px;  
   z-index: 1;    
-  background-color: #fabf0f;
+  background-color: #d0d33c;
   -webkit-user-select: none;
   user-select: none;
-  padding: 10px 5px;
+  padding: 6px 5px;
   border-radius: 5px;
 }
 #menuToggle a:hover{
@@ -235,7 +248,7 @@ body{
 #menuToggle input:checked ~ span
 {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(-4px, -1px);
   background: #232323;
 }
 #menuToggle input:checked ~ span:nth-last-child(3)
@@ -246,7 +259,7 @@ body{
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
   opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(0, -2px);
 }
 #menu
 {
@@ -256,7 +269,7 @@ body{
     padding: 25px;   
     top: -20px;
     right: -20px;
-    background: rgba(199, 201, 49, 0.65);
+    background: rgba(199, 201, 49, 0.92);
     backdrop-filter: blur(8.1px);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;  
@@ -314,14 +327,16 @@ body{
 .search-box{
    background-color: transparent;
     outline: none;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 18px;
-    padding: 5px 15px;
+    padding: 7px 15px;
     color: #fff;
-    min-width: 250px;
+    min-width: 350px;
+    margin-bottom: 15px;
 }
 .search-box:focus{
   background-color: rgba(199, 201, 49, 0.4);
+  border: 2px solid #d0d33c;
 }
 .search-box::placeholder{
   color: #fff;
@@ -333,14 +348,16 @@ body{
     color: 35px;
     width: 35px;
     height: 35px;
-    color: #fcba02;
-    text-align: center;
-     box-shadow: 1px 1px 3px #5d5f51;
+    color: #d0d33c;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px #5d5f51;
     -webkit-box-shadow: 1px 1px 3px #5d5f51;
     -moz-box-shadow: 1px 1px 3px #5d5f51;
 }
 .search-btn:hover{
-   background: #fcba02;
+   background: #d0d33c;
    color: #fff;
 }
 .search-form{
@@ -352,7 +369,7 @@ body{
     height: 240px;
   }
   .item-list-container{
-    top: 135px;
+    top: 120px;
   }
   .navbar-brand{
       font-size: 16px;
@@ -371,7 +388,25 @@ body{
     text-transform: capitalize;
     font-size: 25px;
 }
+.card-header-img img{
+  width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;    
+    margin-left: 15px;
 }
+.card-header .item-name{
+    word-break: break-word;
+    max-width: 150px;
+}
+.search-box{
+  min-width: 250px;
+  padding: 2px 15px;
+}
+}
+
+/*media query ends*/
+
 .card-body{   
     display: flex;
     flex-direction: column;
@@ -422,4 +457,21 @@ body{
 .report-btn:hover{
  background-color: #4e5624;
  color: #fff;
+}
+.food-label{
+   height: 13px;
+   font-size: 5px;  
+   display: relative;
+    margin-bottom: 5px;
+    margin-left: 5px;    
+}
+.food-label-veg{
+  color: #008000;
+  padding: 3px;
+  border: 1px solid #008000;
+}
+.food-label-nonveg{
+  color: #ff0000;
+  padding: 3px;
+  border: 1px solid #ff0000;
 }
