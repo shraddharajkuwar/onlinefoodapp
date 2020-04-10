@@ -418,7 +418,7 @@ body{
     font-size: 15px !important;
     width: 150px;
     position: absolute;
-    bottom: 25px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
