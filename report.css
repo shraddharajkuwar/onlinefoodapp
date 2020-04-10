@@ -75,11 +75,7 @@ body{
     color: #4a4b1f;
     font-weight: 500;
     font-size: 15px !important;
-    width: 150px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 150px;    
 }
 .report-btn:hover{
  background-color: #4e5624;
