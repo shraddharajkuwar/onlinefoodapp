@@ -269,13 +269,15 @@ body{
     padding: 25px;   
     top: -20px;
     right: -20px;
-    background: rgba(199, 201, 49, 0.92);
-    backdrop-filter: blur(8.1px);
+    background: rgba(208, 211, 60, 0.76);   
   list-style-type: none;
   -webkit-font-smoothing: antialiased;  
   transform-origin: 0% 0%;
   transform: translate(100%, 0);  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+    -moz-backdrop-filter: blur(8.1px);
 }
 #menu li
 {
@@ -317,7 +319,7 @@ body{
     text-transform: capitalize;
     font-weight: 500;
     color: #4a4b1f;
-    font-size: 20px;
+    font-size: 17px;
     margin-left: 10px;
     transition: 0.25s ease;
 }
