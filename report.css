@@ -1,14 +1,18 @@
 body{
     background-color: #feffaf  !important;
     font-family: sans-serif;
+    color: #4a4b1f;
 }
-
+.report{
+    background-image: url('images/report.jpg');
+}
 .features{
     position: relative;
     top: 315px;
 }
 .features-card .card-top p{
-	font-size: 18px;
+	font-size: 17px;
+    text-transform: capitalize;
     width: 85%;
     height: 45px;
     font-weight: 500;
@@ -54,7 +58,11 @@ body{
     position: relative;
     top: 225px;
 }
+.features .item-list-MainTitle{
+    top:-110px !important;
 }
+}
+/*media query ends*/
 .card-body-row1 ,.card-body-row2{
     width: 100%;
     display: flex;
@@ -88,13 +96,7 @@ body{
     left: 11px;   
     padding-right: 0px;
 }
-.datepicker-container .form-control{
-   background: transparent;
-    border: 1px solid #d0d33c;
-    border-radius: 15px !important;
-    color: #d0d33c;
-    font-size: 13px;
-}
+
 .datepicker-container .form-control:focus{
     outline: none;
 }
@@ -121,14 +123,42 @@ body{
     text-transform: capitalize;
     color: #fff;
 }
-.apply-btn {
-    background: transparent;
-    border: 1px solid;
-    border-radius: 15px;
-    top: 24px;
-    position: relative;
-    padding: 5px 20px;
-    font-size: 13px;
+
+.select-date-dropdown{
+    padding:30px 25px;
+    background-color: #fffacd;
+    border: none !important;
+    transform: translate3d(0px, 23px, 0px) !important;
+}
+#datepicker .form-control, #datepicker1 .form-control {
+   background: transparent;
+    border: 1px solid #d0d33c;    
     color: #d0d33c;
-    text-transform: capitalize;
+    font-size: 13px;
+    border-radius: 10px !important;
+}
+.select-date-row label{
+    margin-bottom: 0px !important;
+    margin-top: 10px !important;
+    color: #4a4b1f;
+    font-size: 14px;
+}
+.select-date-btn{
+    border: 1px solid #4a4b1f;
+    margin-top: 25px;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #4a4b1f;
+    width: 150px;
+    border-radius: 10px !important;
+}
+.select-date-btn:hover{
+    background-color: #d0d33c;
+    color: #fff;
+    border: 1px solid #d0d33c;
+}
+ .features .item-list-MainTitle{
+    top:-150px;
+    left: 20px;
 }

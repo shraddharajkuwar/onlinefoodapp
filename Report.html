@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
 </head>
 <body>
-	<nav role='navigation' class="navbar">
+	<nav role='navigation' class="navbar report">
 	<div class="navbar-brand">Logo</div>  
   <div id="menuToggle">
     <input type="checkbox" />     
@@ -73,36 +73,59 @@
   </div>
 </nav>
 	<div class="features section-padding">
-		<div class="container datepicker-container">
-		<p class="report-head">Report / seclect Date</p>			
-			<div class="row">
-				<div class="col">
-					<label>From</label>
-		            <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-                     <input class="form-control" type="text" readonly />
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-               </div>
-				</div>
-				<div class="col">
-					<label>To</label>
-		            <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                    <input class="form-control" type="text" readonly />
-                   <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                </div>                
-				</div>
-				<div class="col">
-					<button class="apply-btn">apply</button>
-				</div>				
-			</div>						
-		</div>
-		
-      
+  <h1 class="item-list-MainTitle">Sales Report</h1>      
 	<div class="container">
 		<div class="row">
+      <div class="col-sm-4 features-card">
+        <div class="card">
+                   <div class="card-top display-flex-item">
+                        <p>Today</p>
+                    </div>
+                    <div class="card-body">
+                     <div class="row card-body-row1">
+                      <div>
+                        <p>Total sale</p>                         
+                      </div>
+                      <div>
+                        <p><i class="fa fa-inr" aria-hidden="true"></i>1245</p>
+                      </div>
+                     </div>
+                     <div class="row card-body-row2">
+                      <div>
+                        <p>Total purchase</p>                         
+                      </div>
+                      <div>
+                        <p><i class="fa fa-inr" aria-hidden="true"></i>1245</p>
+                      </div>
+                     </div>
+                    </div>
+                </div>
+      </div>
 			<div class="col-sm-4 features-card">
 				<div class="card">
                    <div class="card-top display-flex-item">
-                       	<p>Date</p>
+                       	<p class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">select Date</p>
+                        <div class="dropdown-menu select-date-dropdown">
+                              <div class="row select-date-row">
+                                  <div class="col-sm-6">
+                                    <label>From</label>
+                                    <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                                         <input class="form-control" type="text" readonly />
+                                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <label>To</label>
+                                       <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                                         <input class="form-control" type="text" readonly />
+                                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="row display-flex-item">
+                                 <button class="btn select-date-btn">Apply</button>
+                              </div>
+                          </div>
                     </div>
                     <div class="card-body">
                      <div class="row card-body-row1">
@@ -124,31 +147,7 @@
                     </div>
                 </div>
 			</div>
-			<div class="col-sm-4 features-card">
-				<div class="card">
-                   <div class="card-top display-flex-item">
-                       	<p>Today</p>
-                    </div>
-                    <div class="card-body">
-                     <div class="row card-body-row1">
-                     	<div>
-                     		<p>Total sale</p>                     		
-                     	</div>
-                     	<div>
-                     		<p><i class="fa fa-inr" aria-hidden="true"></i>1245</p>
-                     	</div>
-                     </div>
-                     <div class="row card-body-row2">
-                     	<div>
-                     		<p>Total purchase</p>                     		
-                     	</div>
-                     	<div>
-                     		<p><i class="fa fa-inr" aria-hidden="true"></i>1245</p>
-                     	</div>
-                     </div>
-                    </div>
-                </div>
-			</div>
+		
 			<div class="col-sm-4 features-card">
 				<div class="card">
                    <div class="card-top display-flex-item">
@@ -177,6 +176,11 @@
 		</div>		
 	</div>	
 </div>
+
+
+
+
+
 <script>
             $(function () {
   $("#datepicker").datepicker({ 
@@ -191,7 +195,7 @@
   }).datepicker('update', new Date());
 });
 
-        </script>
+</script>
 </body>
 </html>
 
